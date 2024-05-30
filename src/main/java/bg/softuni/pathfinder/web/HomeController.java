@@ -27,11 +27,6 @@ public class HomeController {
 //        return mnv;
 //    }
 
-
-//        ModelAndView mnv = new ModelAndView();
-//        mnv.setViewName("index");
-//        mnv.addObject("sofiaTemperature", sofiaTemp);
-
     @GetMapping("/")
     public String index(Model model) {
         double sofiaTemp = new Random().nextDouble();
