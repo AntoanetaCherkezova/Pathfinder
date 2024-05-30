@@ -9,6 +9,8 @@ import java.util.Random;
 
 /**
  * Controller handling the info pages - home, about, contact
+ *
+ *
  */
 
 @Controller
@@ -24,6 +26,11 @@ public class HomeController {
 //
 //        return mnv;
 //    }
+
+
+//        ModelAndView mnv = new ModelAndView();
+//        mnv.setViewName("index");
+//        mnv.addObject("sofiaTemperature", sofiaTemp);
 
     @GetMapping("/")
     public String index(Model model) {
